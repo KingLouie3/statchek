@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Searchbar from './components/Searchbar';
+import Players from './components/Players';
+import Accordion from './components/Accordion';
+
+const items = [
+  {
+    title: 'What is This?'
+  },
+  {
+    title: 'Why go to college',
+    content: 'It is a scam my nigga'
+  },
+  {
+    title: 'How do you use'
+  }
+]
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Searchbar />
+      <Accordion items={items}/>
+    </>
   );
 }
 
