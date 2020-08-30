@@ -5,5 +5,7 @@ Search players and find your favorite players stats!
 
 
 ## To DO List
-[] Create pull
-[] 
+[] Create API pull
+
+[] Create Cards for players
+
